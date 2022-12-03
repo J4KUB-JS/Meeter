@@ -9,7 +9,7 @@ export default function RoutesComponent() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/home" element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/meeter" element={<Main />} />
         <Route path="/login" element={<LogIn />} />
         <Route path="/signin" element={<SignIn />} />
