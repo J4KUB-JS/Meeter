@@ -1,3 +1,9 @@
 export const Header = () => {
-  return <div></div>;
+  return <div>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>;
 };
