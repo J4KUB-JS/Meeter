@@ -1,9 +1,19 @@
+import { Link } from "react-router-dom";
+
 export const Header = () => {
-  return <div>
-    <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-  </div>;
+  return (
+    <div className="navigation">
+      <Link className="logo" to={"/login"}>
+        Meeter
+      </Link>
+      <div className="cta">
+        <Link className="login-btn" to={"/login"}>
+          Log In
+        </Link>
+        <Link className="signin-btn" to={"/signin"}>
+          Sing In
+        </Link>
+      </div>
+    </div>
+  );
 };
