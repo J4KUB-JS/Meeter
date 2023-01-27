@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export const Header = () => {
   return (
     <div className="navigation">
-      <Link className="logo" to={"/login"}>
+      <Link className="logo" to={"/"}>
         Meeter
       </Link>
       <div className="cta">

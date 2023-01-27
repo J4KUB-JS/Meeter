@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const SignIn = () => {
   return (
     <div className="wrapper">
@@ -18,8 +20,11 @@ export const SignIn = () => {
           <input type="password" placeholder="********" />
         </div>
         <button>Sign In</button>
-        <div className="forgetPassword">
-          Forgot you <u>password</u> ?
+        <div className="secondaryAction">
+          Have account?
+          <Link className="secondaryActionLink" to={"/login"}>
+            <u>Log in</u>
+          </Link>
         </div>
       </div>
     </div>

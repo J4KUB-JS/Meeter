@@ -1,3 +1,7 @@
 export const NoPage = () => {
-  return <main>404 Page not found</main>;
+  return (
+    <div className="wrapper">
+      <div className="noPageCard">ERROR - 404 Page not found</div>
+    </div>
+  );
 };
