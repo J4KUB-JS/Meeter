@@ -4,7 +4,7 @@ export const SignIn = () => {
   return (
     <div className="wrapper">
       <div className="card">
-        <div className="heading">Welcome back</div>
+        <div className="heading">Nice to Meet You</div>
         <div className="inputWrapper">
           <label>User Name</label>
           <input type="text" placeholder="John Doe" />
