@@ -5,6 +5,7 @@ import { Main } from "../pages/Main";
 import { LogIn } from "../pages/LogIn";
 import { SignIn } from "../pages/SignIn";
 import { Chat } from "../pages/Chat";
+import { Cards } from "../pages/Cards";
 
 export default function RoutesComponent() {
   return (
@@ -12,6 +13,7 @@ export default function RoutesComponent() {
       <Route path="/" element={<HomePage />} />
       <Route path="/meeter" element={<Main />} />
       <Route path="/chat" element={<Chat />} />
+      <Route path="/cards" element={<Cards />} />
       <Route path="/login" element={<LogIn />} />
       <Route path="/signin" element={<SignIn />} />
       <Route path="*" element={<NoPage />} />
