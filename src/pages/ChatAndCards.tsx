@@ -9,7 +9,7 @@ const peoples = [
   { id: 4, name: "Hailie", desc: "some desc 4", img: "person4" },
 ];
 
-export const Cards = () => {
+export const ChatAndCard = () => {
   const [person, setPerson] = useState({
     id: 1,
     name: "Jack",

@@ -78,7 +78,7 @@ export const LogIn = () => {
             <u>Create one</u>
           </Link>
         </div>
-        {correctCredentials && <Navigate replace to="/cards" />}
+        {correctCredentials && <Navigate replace to="/chatandcards" />}
       </div>
     </div>
   );
