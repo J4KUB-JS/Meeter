@@ -1,12 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-body {
+.body {
   font-family: "Inter", sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
+.errorMassage {
+  color: red;
+}
 .navigation {
   margin: 1rem 4rem;
   display: flex;
@@ -178,9 +180,8 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 350px;
-  border: 2px solid #000;
+  border: 2px solid rgb(159, 159, 159);
   border-radius: 20px;
-  /* padding-bottom: 2px; */
 }
 
 .textBox input {
@@ -201,11 +202,7 @@ body {
   color: white;
 }
 
-.textBox input:active {
-  /* TODO: Remove default styles */
-}
 .rightSide {
-  /* padding-top: 50px; */
   overflow: hidden;
   position: relative;
   border-radius: 50px 0px 0px 50px;
@@ -217,4 +214,178 @@ body {
   left: -200px;
   object-fit: cover;
   max-width: 200%;
+}
+
+.peopleCards {
+  margin-top: 100px;
+}
+.personCard img {
+  max-width: 100%;
+}
+.personCard {
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+  max-width: 400px;
+}
+.desc {
+  color: white;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.571) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+.personName {
+  margin-left: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.personDesc {
+  margin-left: 2rem;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 1.2rem;
+  margin-top: 0.5rem;
+}
+.bottomActions {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* padding: 1rem; */
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.571) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+.actionIcon {
+  margin: 1rem 2rem;
+  color: white;
+  border: 2px solid white;
+  padding: 0.5rem;
+  border-radius: 100%;
+}
+
+.like:hover {
+  color: rgb(45, 188, 78);
+  color: rgb(45, 188, 78);
+  border: 2px solid rgb(45, 188, 78);
+}
+.dislike:hover {
+  color: rgb(188, 45, 45);
+  color: rgb(188, 45, 45);
+  border: 2px solid rgb(188, 45, 45);
+}
+
+.peopleChat {
+  background-color: #3471cc;
+  border-radius: 30px 0px 0px 30px;
+  padding: 2rem;
+}
+
+.ChatHeading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.peopleBubble {
+  margin-top: 30px;
+  position: relative;
+  display: flex;
+  gap: 2rem;
+  max-width: 100%;
+}
+
+.bubble img {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+.ChatWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 30px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 0.5rem;
+}
+.imgAndData img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+.chatPersonName {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+.dropDownIcon {
+  margin-right: 1rem;
+}
+.imgAndData {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.openedChat {
+  width: 100%;
+  margin-top: 30px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 0.5rem;
+}
+.chatHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.chatWrapper {
+  max-height: 200px;
+  overflow-y: scroll;
+  width: 100%;
+}
+.personChatBubble {
+  background-color: #e0e0e0;
+  max-width: 35ch;
+  border-radius: 15px;
+  padding: 0.5rem;
+  margin-top: 20px;
+}
+.userChatBubbleWrapper {
+  display: flex;
+  justify-content: end;
+}
+.userChatBubble {
+  background-color: #669ced;
+  max-width: 35ch;
+  border-radius: 15px;
+  padding: 0.5rem;
+  margin-top: 20px;
+}
+
+.answerInput {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid rgb(159, 159, 159);
+  border-radius: 20px;
+}
+
+.answerInput input {
+  width: 230px;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 20px;
 }

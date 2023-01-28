@@ -5,11 +5,11 @@ import RoutesComponent from "./components/RoutesComponent";
 
 function App() {
   return (
-    <body>
+    <div className="body">
       <Header />
       <RoutesComponent />
       <Footer />
-    </body>
+    </div>
   );
 }
 
