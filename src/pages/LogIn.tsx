@@ -45,7 +45,6 @@ export const LogIn = () => {
         {error && (
           <div className="errorMassage">Nick or Password Incorrect</div>
         )}
-
         <div className="inputWrapper">
           <label>User Name</label>
           <input
